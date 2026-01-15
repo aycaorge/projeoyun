@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace; 
+    background: #000;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(0.6); 
+}
+
+.field {
+    flex: 1;
+    overflow: hidden;
+}
+
+.field img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.side-menu {
+    position: fixed;
+    left: -170px;
+    top: 0;
+    width: 210px;
+    height: 100%;
+    background: rgba(0, 0, 40, 0.9);
+    border-right: 3px solid #fff;
+    transition: 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.side-menu:hover {
+    left: 0;
+}
+
+.menu-btn {
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.handle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 6px;
+    height: 60px;
+    background: white;
+}
+.game-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    pointer-events: none; 
+}
+
+.character-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: -20px;
+    height: 60%;
+}
+
+.sprite {
+    height: 80%; /* Adjust based on your sprite size */
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+.dialogue-box {
+    pointer-events: all; /* Make buttons clickable */
+    background: rgba(0, 0, 100, 0.85); /* Classic Blue JRPG Box */
+    border: 4px solid #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    height: 150px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.name-tag {
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    background: #fff;
+    color: #000;
+    padding: 5px 20px;
+    font-weight: bold;
+    border: 2px solid #000;
+}
+
+.text-content {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.controls {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+
+.nav-btn {
+    background: #fff;
+    border: none;
+    padding: 5px 15px;
+    margin-left: 10px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background: #ffcc00;
+}
