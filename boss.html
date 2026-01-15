@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Boss</title>
+    <link rel="stylesheet" href="boss.css">
+</head>
+<body>
+      <nav class="side-menu">
+        <div class="handle"></div>
+        <a href="index.html" class="menu-btn">Ana Sayfa</a>
+        <a href="galeri.html" class="menu-btn">Galeri</a>
+        <a href="boss.html" class="menu-btn">BossFight</a>
+        <a href="about.html" class="menu-btn">About</a>
+    </nav>
+    <script src="boss.js"></script>
+    <div class="battle-scene">
+  <div class="entity-container enemy">
+    <div class="stats">
+      <div class="name" style="color: rgb(0, 0, 0);">Boss</div>
+      <div class="hp-bar"><div id="enemy-hp" class="hp-fill"></div></div>
+    </div>
+    <div id="enemy-sprite" class="sprite"></div>
+    <img src="lynae.png" alt="">
+  </div>
+
+  <div class="entity-container player">
+    <div id="player-sprite" class="sprite"><img src="mornye.png" alt=""></div>
+    <div class="stats">
+      <div class="name" style="color: aliceblue;">Player</div>
+      <div class="hp-bar"><div id="player-hp" class="hp-fill"></div></div>
+    </div>
+  </div>
+
+  <div class="ui-panel">
+  <div class="actions" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px;">
+    <button id="at1" class="actionbtn" onclick="attack('Thunderbolt', 'player')">Normal Saldırı</button>
+    <button id="at2" class="actionbtn" onclick="qattack('Quick Attack', 'player')">Hızlı Saldırı</button>
+    <button class="actionbtn">BAG</button>
+    <button class="actionbtn" onclick="run()">RUN</button>
+  </div>
+</div>
+</div>
+<div id="chatBubble" class="chat-bubble">
+  Güldürme beni!
+</div>
+<div id="chatBubble2" class="chat-bubble">
+  Güzel deneme ama yetmez!
+</div>
+<div id="chatBubble3" class="chat-bubble">
+  Ben... nasıl kaybederim....
+</div>
+
+</body>
+</html>
