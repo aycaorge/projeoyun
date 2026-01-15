@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JRPG State - Animated Panels</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body style="background-image: url(bg2.jpeg);background-repeat: no-repeat;background-size: cover    ;">
+    <script src="st1.js"></script>
+    <nav class="side-menu">
+        <div class="handle"></div>
+        <a href="index.html" class="menu-btn">Ana Sayfa</a>
+        <a href="galeri.html" class="menu-btn">Galeri</a>
+        <a href="boss.html" class="menu-btn">BossFight</a>
+        <a href="about.html" class="menu-btn">About</a>
+    </nav>
+
+    <div class="game-overlay">
+        <div class="character-container">
+            <img src="lynae.png" class="sprite left-char" id="leftc" alt="Hero">
+            <img src="mornye.png" class="sprite right-char" id="rightc" alt="Villain">
+        </div>
+
+        <div class="dialogue-box">
+            <div class="name-tag" id="name">Hero</div>
+            <center><p class="text-content" id="dial"></p></center>
+            
+            <div class="controls">
+                <button class="nav-btn" onclick="prev()">PREVIOUS</button>
+                <button class="nav-btn" onclick="next()">NEXT</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
