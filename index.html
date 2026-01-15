@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje İndex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <script src="main.js"></script>
+    <nav class="side-menu">
+        <div class="handle"></div>
+        <a href="index.html" class="menu-btn">Ana Sayfa</a>
+        <a href="galeri.html" class="menu-btn">Galeri</a>
+        <a href="boss.html" class="menu-btn">Bossfight</a>
+        <a  href="about.html" class="menu-btn">About</a>
+    </nav>
+
+    <main class="container">
+        <div class="field" id="topf" onmouseenter="tophov()" onmouseleave="topex()">
+            <a href="st1.html" style="text-decoration: none;">
+            <img  src="moning.png" style="object-position: 70% 35%;"  width="1400" alt="Animation Mid" id="topfield">
+            <img  href="pg2.html" src="mornye.gif" style="display: none; object-position: 50% 28%;" id="topfield2"></a>
+        </div>
+        
+        <div class="field" onmouseenter="midhov()" onmouseleave="midex()">
+            <a href="st2.html" style="text-decoration: none;"><img src="linnai.png"alt="Animation Mid" id="midfield">
+            <img src="linnai.mp4" style="display: none; object-position: 50% 18%; top: -40px;" id="midfield2"></a>
+        </div>
+
+        <div class="field" onmouseenter="bothov()" onmouseleave="botex()">
+            <a href="boss.html" style="text-decoration: none;">
+            <img src="jiabeilina.png" alt="Animation Mid" id="botfield">
+            <img src="galbrena.gif" style="display: none;" id="botfield2">
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>

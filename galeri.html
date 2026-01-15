@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Galeri</title>
+    <link rel="stylesheet" href="stylegaleri.css">
+</head>
+<body>
+     <nav class="side-menu">
+        <div class="handle"></div>
+        <a href="index.html" class="menu-btn">Ana Sayfa</a>
+        <a href="galeri.html" class="menu-btn">Galeri</a>
+        <a href="boss.html" class="menu-btn">Bossfight</a>
+        <a href="about.html" class="menu-btn">About</a>
+    </nav>
+    <div class="gallery-container">
+        <div class="image-card" onclick="checkLock(1, 'linnai.png')">
+            <div id="lck1" class="overlay"><span class="lock-icon">🔒</span></div>
+            <img id="im1" src="linnai.png" alt="Resim 1">
+        </div>
+        <div class="image-card" onclick="checkLock(2, 'yuno.jpg')">
+            <div id="lck2" class="overlay"><span class="lock-icon">🔒</span></div>
+            <img id="im2"src="yuno.jpg" alt="Resim 2">
+        </div>
+        <div class="image-card" onclick="checkLock2(3, 'madoka1.jpg')">
+            <div  id="lck3"class="overlay"><span class="lock-icon">🔒</span></div>
+            <img id="im3"src="madoka1.jpg" alt="Resim 3">
+        </div>
+        <div class="image-card" onclick="checkLock3(4, 'linnai.png')">
+            <div id="lck4"class="overlay"><span class="lock-icon">🔒</span></div>
+            <img id="im4"src="linnai.png" alt="Resim 4">
+        </div>
+        <div class="image-card" onclick="checkLock(1, 'aug.jpg')">
+            <div  id="lck5"class="overlay"><span class="lock-icon">🔒</span></div>
+            <img id="im5" src="aug.jpg" alt="Resim 1">
+        </div>
+        <div class="image-card" onclick="checkLock(2, 'galbrena.gif')">
+            <div  id="lck6"class="overlay"><span class="lock-icon">🔒</span></div>
+            <img id="im6" src="jiabeilina.png" alt="Resim 2">
+        </div>
+        <div class="image-card" onclick="checkLock2(3, 'moning.png')">
+            <div  id="lck7"class="overlay"><span class="lock-icon">🔒</span></div>
+            <img id="im7"src="moning.png" alt="Resim 3">
+        </div>
+        <div class="image-card" onclick="checkLock3(4, 'phro.webp')">
+            <div id="lck8"class="overlay"><span class="lock-icon">🔒</span></div>
+            <img id="im8"src="phro.webp" alt="Resim 4">
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="" alt="Tam Ekran">
+    </div>
+
+    <script src="galeri.js"></script>
+</body>
+</html>
